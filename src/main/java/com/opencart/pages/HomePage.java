@@ -35,6 +35,9 @@ public class HomePage extends BasePage {
 
     @FindBy(css = "button.btn.btn-default.btn-lg") 
     WebElement searchBtn;
+    
+    @FindBy(linkText = "Password")
+    WebElement passwordOption;
 
     // --- 2. Constructor ---
     public HomePage() { 
@@ -76,5 +79,11 @@ public class HomePage extends BasePage {
         myAccountDropdown.click();
         orderHistoryOption.click();
         return new OrderHistoryPage();
+    }
+    
+    public ChangePasswordPage navigateToChangePassword() {
+        myAccountDropdown.click();
+        passwordOption.click();
+        return new ChangePasswordPage();
     }
 }
