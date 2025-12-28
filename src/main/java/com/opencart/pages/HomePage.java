@@ -15,6 +15,9 @@ public class HomePage extends BasePage {
 
     @FindBy(linkText = "Register") 
     WebElement registerOption;
+    
+    @FindBy(linkText = "Order History")
+    WebElement orderHistoryOption;
 
     @FindBy(linkText = "Login") 
     WebElement loginOption;
@@ -67,5 +70,11 @@ public class HomePage extends BasePage {
         searchBox.clear();
         searchBox.sendKeys(product);
         searchBtn.click();
+    }
+    
+    public OrderHistoryPage navigateToOrderHistory() {
+        myAccountDropdown.click();
+        orderHistoryOption.click();
+        return new OrderHistoryPage();
     }
 }
