@@ -1,49 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-28T16:35:37 IST" name="Surefire suite" finished-at="2025-12-28T16:36:20 IST" duration-ms="43143">
+  <suite started-at="2025-12-28T17:26:30 IST" name="Surefire suite" finished-at="2025-12-28T17:27:17 IST" duration-ms="46925">
     <groups>
     </groups>
-    <test started-at="2025-12-28T16:35:37 IST" name="Surefire test" finished-at="2025-12-28T16:36:20 IST" duration-ms="43143">
+    <test started-at="2025-12-28T17:26:30 IST" name="Surefire test" finished-at="2025-12-28T17:27:17 IST" duration-ms="46925">
       <class name="com.opencart.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.tests.LoginTest@2ea227af]" started-at="2025-12-28T16:36:00 IST" name="setup" finished-at="2025-12-28T16:36:03 IST" duration-ms="3235" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.tests.LoginTest@363ee3a2]" started-at="2025-12-28T17:26:50 IST" name="setup" finished-at="2025-12-28T17:26:53 IST" duration-ms="2406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserLogin()[pri:0, instance:com.opencart.tests.LoginTest@2ea227af]" started-at="2025-12-28T16:36:03 IST" name="verifyUserLogin" finished-at="2025-12-28T16:36:12 IST" duration-ms="8653" status="PASS">
+        <test-method signature="verifyUserLogin()[pri:0, instance:com.opencart.tests.LoginTest@363ee3a2]" started-at="2025-12-28T17:26:53 IST" name="verifyUserLogin" finished-at="2025-12-28T17:26:59 IST" duration-ms="6439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.LoginTest@2ea227af]" started-at="2025-12-28T16:36:12 IST" name="tearDown" finished-at="2025-12-28T16:36:13 IST" duration-ms="492" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.LoginTest@363ee3a2]" started-at="2025-12-28T17:26:59 IST" name="tearDown" finished-at="2025-12-28T17:26:59 IST" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.opencart.tests.LoginTest -->
-      <class name="com.opencart.tests.GuestCheckoutTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.tests.GuestCheckoutTest@45b9a632]" started-at="2025-12-28T16:35:37 IST" name="setup" finished-at="2025-12-28T16:35:44 IST" duration-ms="6190" status="PASS">
+      <class name="com.opencart.tests.ProductCompareTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.tests.ProductCompareTest@4690b489]" started-at="2025-12-28T17:26:59 IST" name="setup" finished-at="2025-12-28T17:27:02 IST" duration-ms="2476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyGuestCheckoutFlow()[pri:0, instance:com.opencart.tests.GuestCheckoutTest@45b9a632]" started-at="2025-12-28T16:35:44 IST" name="verifyGuestCheckoutFlow" finished-at="2025-12-28T16:36:00 IST" duration-ms="16144" status="PASS">
+        <test-method signature="verifyTwoProductsComparison()[pri:0, instance:com.opencart.tests.ProductCompareTest@4690b489]" started-at="2025-12-28T17:27:02 IST" name="verifyTwoProductsComparison" finished-at="2025-12-28T17:27:10 IST" duration-ms="8296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTwoProductsComparison -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.ProductCompareTest@4690b489]" started-at="2025-12-28T17:27:10 IST" name="tearDown" finished-at="2025-12-28T17:27:10 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.tests.ProductCompareTest -->
+      <class name="com.opencart.tests.GuestCheckoutTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.tests.GuestCheckoutTest@4df50bcc]" started-at="2025-12-28T17:26:30 IST" name="setup" finished-at="2025-12-28T17:26:37 IST" duration-ms="7021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyGuestCheckoutFlow()[pri:0, instance:com.opencart.tests.GuestCheckoutTest@4df50bcc]" started-at="2025-12-28T17:26:37 IST" name="verifyGuestCheckoutFlow" finished-at="2025-12-28T17:26:50 IST" duration-ms="12816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyGuestCheckoutFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.GuestCheckoutTest@45b9a632]" started-at="2025-12-28T16:36:00 IST" name="tearDown" finished-at="2025-12-28T16:36:00 IST" duration-ms="486" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.GuestCheckoutTest@4df50bcc]" started-at="2025-12-28T17:26:50 IST" name="tearDown" finished-at="2025-12-28T17:26:50 IST" duration-ms="353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.opencart.tests.GuestCheckoutTest -->
       <class name="com.opencart.tests.RegisterTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.tests.RegisterTest@4386f16]" started-at="2025-12-28T16:36:13 IST" name="setup" finished-at="2025-12-28T16:36:16 IST" duration-ms="3129" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.tests.RegisterTest@79b06cab]" started-at="2025-12-28T17:27:10 IST" name="setup" finished-at="2025-12-28T17:27:13 IST" duration-ms="2433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyUserRegistration()[pri:0, instance:com.opencart.tests.RegisterTest@4386f16]" started-at="2025-12-28T16:36:16 IST" name="verifyUserRegistration" finished-at="2025-12-28T16:36:20 IST" duration-ms="4205" status="PASS">
+        <test-method signature="verifyUserRegistration()[pri:0, instance:com.opencart.tests.RegisterTest@79b06cab]" started-at="2025-12-28T17:27:13 IST" name="verifyUserRegistration" finished-at="2025-12-28T17:27:17 IST" duration-ms="3673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserRegistration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.RegisterTest@4386f16]" started-at="2025-12-28T16:36:20 IST" name="tearDown" finished-at="2025-12-28T16:36:20 IST" duration-ms="463" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.RegisterTest@79b06cab]" started-at="2025-12-28T17:27:17 IST" name="tearDown" finished-at="2025-12-28T17:27:17 IST" duration-ms="341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
