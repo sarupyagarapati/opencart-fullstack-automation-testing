@@ -1,10 +1,3 @@
-C:\Users\padma\eclipse-workspace\Automating-opencart\src\test\java\PageObjects\AccountRegistrationPage.java
-C:\Users\padma\eclipse-workspace\Automating-opencart\src\test\java\PageObjects\BasePage.java
-C:\Users\padma\eclipse-workspace\Automating-opencart\src\test\java\PageObjects\HomePage.java
-C:\Users\padma\eclipse-workspace\Automating-opencart\src\test\java\testcases\BaseClass.java
-C:\Users\padma\eclipse-workspace\Automating-opencart\src\test\java\testcases\TC001_AccountRegistrationTest.java
-C:\Users\padma\eclipse-workspace\Automating-opencart\src\test\java\testcases\TC002.java
-C:\Users\padma\eclipse-workspace\Automating-opencart\src\test\java\testcases\TC003.java
-C:\Users\padma\eclipse-workspace\Automating-opencart\src\test\java\testcases\TC004.java
-C:\Users\padma\eclipse-workspace\Automating-opencart\src\test\java\testcases\TC005.java
-C:\Users\padma\eclipse-workspace\Automating-opencart\src\test\java\testcases\TC006.java
+C:\Users\padma\eclipse-workspace\Automating-opencart\src\test\java\com\opencart\tests\GuestCheckoutTest.java
+C:\Users\padma\eclipse-workspace\Automating-opencart\src\test\java\com\opencart\tests\LoginTest.java
+C:\Users\padma\eclipse-workspace\Automating-opencart\src\test\java\com\opencart\tests\RegisterTest.java
