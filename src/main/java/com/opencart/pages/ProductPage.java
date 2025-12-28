@@ -19,6 +19,8 @@ public class ProductPage extends BasePage {
     // NEW LOCATOR: The Link in the success message "product comparison"
     @FindBy(linkText = "product comparison")
     WebElement comparisonLink;
+    @FindBy(xpath = "//button[@data-original-title='Add to Wish List']")
+    WebElement addToWishlistBtn;
 
     public ProductPage() { PageFactory.initElements(driver, this); }
 
@@ -46,5 +48,8 @@ public class ProductPage extends BasePage {
     public ComparisonPage clickComparisonLink() {
         comparisonLink.click();
         return new ComparisonPage();
+    }
+    public void clickAddToWishlist() {
+        addToWishlistBtn.click();
     }
 }

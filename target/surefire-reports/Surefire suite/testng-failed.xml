@@ -3,13 +3,13 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.opencart.tests.LoginTest">
+      <class name="com.opencart.tests.WishlistTest">
         <methods>
-          <include name="verifyUserLogin"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="verifyAddProductToWishlist"/>
         </methods>
-      </class> <!-- com.opencart.tests.LoginTest -->
+      </class> <!-- com.opencart.tests.WishlistTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

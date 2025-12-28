@@ -4,9 +4,8 @@
     
     <test name="Regression Tests">
         <classes>
-            <class name="com.opencart.tests.RegisterTest"/>
-            <class name="com.opencart.tests.LoginTest"/>
-            <class name="com.opencart.tests.GuestCheckoutTest"/>
+          
+            <class name="com.opencart.tests.WishlistTest"/>
         </classes>
     </test>
     
