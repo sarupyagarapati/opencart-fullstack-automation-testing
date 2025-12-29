@@ -5,8 +5,10 @@
     <test name="Regression Tests">
         <classes>
           
-            <class name="com.opencart.tests.WishlistTest"/>
-        </classes>
+<class name="com.opencart.api.tests.LoginApiTest"/>
+            <class name="com.opencart.api.tests.CartApiTest"/>
+            <class name="com.opencart.api.tests.RegisterApiTest"/>
+            <class name="com.opencart.tests.HybridLoginTest"/>    </classes>
     </test>
     
 </suite>
