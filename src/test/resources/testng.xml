@@ -29,6 +29,15 @@
         <classes>
              <class name="com.opencart.tests.RegisterTest"/>
              <class name="com.opencart.tests.LoginTest"/>
+                          <class name="com.opencart.tests.ChangePasswordTest"/>
+                                       <class name="com.opencart.tests.GuestCheckoutTest"/>
+             <class name="com.opencart.tests.OrderHistoryTest"/>
+             <class name="com.opencart.tests.ProductCompareTest"/>
+                          <class name="com.opencart.tests.WishlistTest"/>
+
+
+
+             
              </classes>
     </test>
     
