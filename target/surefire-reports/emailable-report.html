@@ -9,22 +9,293 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Industrial Hybrid Framework Suite</th></tr>
-<tr><td><a href="#t0">Backend API Tests</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7,057</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Hybrid Integration Tests</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7,923</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Frontend UI Tests</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">16,719</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">8</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">31,699</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Backend API Tests</a></td><td class="num">0</td><td class="num attn">5</td><td class="num">0</td><td class="num">0</td><td class="num">6,450</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Database Validation Tests</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">80</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Hybrid Integration Tests</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">4,184</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Frontend UI Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">25,265</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num attn">7</th><th class="num">0</th><th class="num attn">2</th><th class="num">35,979</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Industrial Hybrid Framework Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Backend API Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.opencart.api.tests.CartApiTest</td><td><a href="#m0">verifyAddItemToCart</a></td><td rowspan="1">1767005558191</td><td rowspan="1">369</td></tr><tr class="passedodd"><td rowspan="1">com.opencart.api.tests.CurrencyApiTest</td><td><a href="#m1">verifyChangeCurrencyToEUR</a></td><td rowspan="1">1767005559802</td><td rowspan="1">477</td></tr><tr class="passedeven"><td rowspan="1">com.opencart.api.tests.EditCartApiTest</td><td><a href="#m2">verifyEditCartQuantity</a></td><td rowspan="1">1767005559215</td><td rowspan="1">360</td></tr><tr class="passedodd"><td rowspan="1">com.opencart.api.tests.LoginApiTest</td><td><a href="#m3">verifyApiLogin</a></td><td rowspan="1">1767005557692</td><td rowspan="1">270</td></tr><tr class="passedeven"><td rowspan="1">com.opencart.api.tests.RegisterApiTest</td><td><a href="#m4">verifyRegisterAccountViaPost</a></td><td rowspan="1">1767005558813</td><td rowspan="1">214</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Hybrid Integration Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.opencart.api.tests.HybridLoginTest</td><td><a href="#m5">verifyLoginWithApiCreatedUser</a></td><td rowspan="1">1767005564933</td><td rowspan="1">2972</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Frontend UI Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.opencart.tests.LoginTest</td><td><a href="#m6">verifyUserLogin</a></td><td rowspan="1">1767005577295</td><td rowspan="1">7352</td></tr><tr class="passedodd"><td rowspan="1">com.opencart.tests.RegisterTest</td><td><a href="#m7">verifyUserRegistration</a></td><td rowspan="1">1767005570927</td><td rowspan="1">3679</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Industrial Hybrid Framework Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Backend API Tests &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.opencart.api.tests.CartApiTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1767028411636</td><td rowspan="1">75</td></tr><tr class="failedodd"><td rowspan="1">com.opencart.api.tests.CurrencyApiTest</td><td><a href="#m1">setup</a></td><td rowspan="1">1767028411905</td><td rowspan="1">95</td></tr><tr class="failedeven"><td rowspan="1">com.opencart.api.tests.EditCartApiTest</td><td><a href="#m2">setup</a></td><td rowspan="1">1767028411801</td><td rowspan="1">102</td></tr><tr class="failedodd"><td rowspan="1">com.opencart.api.tests.LoginApiTest</td><td><a href="#m3">setup</a></td><td rowspan="1">1767028405596</td><td rowspan="1">6020</td></tr><tr class="failedeven"><td rowspan="1">com.opencart.api.tests.RegisterApiTest</td><td><a href="#m4">setup</a></td><td rowspan="1">1767028411713</td><td rowspan="1">83</td></tr><tr><th colspan="4">Backend API Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.opencart.api.tests.CartApiTest</td><td><a href="#m5">verifyAddItemToCart</a></td><td rowspan="1">1767028411713</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">com.opencart.api.tests.CurrencyApiTest</td><td><a href="#m6">verifyChangeCurrencyToEUR</a></td><td rowspan="1">1767028412003</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">com.opencart.api.tests.EditCartApiTest</td><td><a href="#m7">verifyEditCartQuantity</a></td><td rowspan="1">1767028411904</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">com.opencart.api.tests.LoginApiTest</td><td><a href="#m8">verifyApiLogin</a></td><td rowspan="1">1767028411632</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">com.opencart.api.tests.RegisterApiTest</td><td><a href="#m9">verifyRegisterAccountViaPost</a></td><td rowspan="1">1767028411800</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Database Validation Tests &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.opencart.tests.DatabaseValidationTest</td><td><a href="#m10">setup</a></td><td rowspan="1">1767028412051</td><td rowspan="1">76</td></tr><tr><th colspan="4">Database Validation Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.opencart.tests.DatabaseValidationTest</td><td><a href="#m11">verifyUserRegistrationInDatabase</a></td><td rowspan="1">1767028412129</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Hybrid Integration Tests &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.opencart.api.tests.HybridLoginTest</td><td><a href="#m12">setupDataAndBrowser</a></td><td rowspan="1">1767028412142</td><td rowspan="1">4174</td></tr><tr><th colspan="4">Hybrid Integration Tests &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.opencart.api.tests.HybridLoginTest</td><td><a href="#m13">tearDown</a></td><td rowspan="1">1767028416322</td><td rowspan="1">0</td></tr><tr><th colspan="4">Hybrid Integration Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.opencart.api.tests.HybridLoginTest</td><td><a href="#m14">verifyLoginWithApiCreatedUser</a></td><td rowspan="1">1767028416320</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Frontend UI Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.opencart.tests.LoginTest</td><td><a href="#m15">verifyUserLogin</a></td><td rowspan="1">1767028431277</td><td rowspan="1">10029</td></tr><tr class="failedodd"><td rowspan="1">com.opencart.tests.RegisterTest</td><td><a href="#m16">verifyUserRegistration</a></td><td rowspan="1">1767028418465</td><td rowspan="1">10054</td></tr></tbody>
 </table>
-<h2>Backend API Tests</h2><h3 id="m0">com.opencart.api.tests.CartApiTest#verifyAddItemToCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.opencart.api.tests.CurrencyApiTest#verifyChangeCurrencyToEUR</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.opencart.api.tests.EditCartApiTest#verifyEditCartQuantity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.opencart.api.tests.LoginApiTest#verifyApiLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.opencart.api.tests.RegisterApiTest#verifyRegisterAccountViaPost</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Hybrid Integration Tests</h2><h3 id="m5">com.opencart.api.tests.HybridLoginTest#verifyLoginWithApiCreatedUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Frontend UI Tests</h2><h3 id="m6">com.opencart.tests.LoginTest#verifyUserLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.opencart.tests.RegisterTest#verifyUserRegistration</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Backend API Tests</h2><h3 id="m0">com.opencart.api.tests.CartApiTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.opencart.api.tests.CurrencyApiTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.opencart.api.tests.EditCartApiTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.opencart.api.tests.LoginApiTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.opencart.api.tests.RegisterApiTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.opencart.api.tests.CartApiTest#verifyAddItemToCart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.opencart.api.tests.CurrencyApiTest#verifyChangeCurrencyToEUR</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.opencart.api.tests.EditCartApiTest#verifyEditCartQuantity</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.opencart.api.tests.LoginApiTest#verifyApiLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.opencart.api.tests.RegisterApiTest#verifyRegisterAccountViaPost</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Database Validation Tests</h2><h3 id="m10">com.opencart.tests.DatabaseValidationTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.opencart.tests.DatabaseValidationTest#verifyUserRegistrationInDatabase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Hybrid Integration Tests</h2><h3 id="m12">com.opencart.api.tests.HybridLoginTest#setupDataAndBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;302&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:139)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:147)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.opencart.api.tests.HybridLoginTest.setupDataAndBrowser(HybridLoginTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">com.opencart.api.tests.HybridLoginTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">com.opencart.api.tests.HybridLoginTest#verifyLoginWithApiCreatedUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;302&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:139)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:147)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.opencart.api.tests.HybridLoginTest.setupDataAndBrowser(HybridLoginTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Frontend UI Tests</h2><h3 id="m15">com.opencart.tests.LoginTest#verifyUserLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=143.0.7499.170)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0f08e2d121263d4ec14ac9c7f61e53f, findElement {using=xpath, value=//span[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\padma\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63657}, goog:processID: 3664, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63657/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a0f08e2d121263d4ec14ac9c7f61e53f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.opencart.pages.HomePage.navigateToRegister(HomePage.java:51)
+	at com.opencart.tests.LoginTest.verifyUserLogin(LoginTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">com.opencart.tests.RegisterTest#verifyUserRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=143.0.7499.170)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [164a91b87704155fce53ccbaa49a43fd, findElement {using=xpath, value=//span[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\padma\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51077}, goog:processID: 5732, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51077/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 164a91b87704155fce53ccbaa49a43fd
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.opencart.pages.HomePage.navigateToRegister(HomePage.java:51)
+	at com.opencart.tests.RegisterTest.verifyUserRegistration(RegisterTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

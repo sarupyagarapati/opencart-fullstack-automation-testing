@@ -2,13 +2,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Industrial Hybrid Framework Suite">
     
-    <test name="Backend API Tests">
+   <test name="Backend API Tests">
         <classes>
             <class name="com.opencart.api.tests.LoginApiTest"/>
             <class name="com.opencart.api.tests.CartApiTest"/>
             <class name="com.opencart.api.tests.RegisterApiTest"/>
             <class name="com.opencart.api.tests.EditCartApiTest"/>
             <class name="com.opencart.api.tests.CurrencyApiTest"/>
+        </classes>
+    </test>
+    
+    
+    <test name="Database Validation Tests">
+        <classes>
+            <class name="com.opencart.tests.DatabaseValidationTest"/>
         </classes>
     </test>
 

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Industrial Hybrid Framework Suite</span>
+              <span class="suite-name border-failed">Industrial Hybrid Framework Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Industrial_Hybrid_Framework_Suite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,56 +92,70 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">9 methods, 2 failed,  7 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" class="hide-methods passed suite-Industrial_Hybrid_Framework_Suite"> (hide)</a> <!-- hide-methods passed suite-Industrial_Hybrid_Framework_Suite -->
-                      <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" class="show-methods passed suite-Industrial_Hybrid_Framework_Suite"> (show)</a> <!-- show-methods passed suite-Industrial_Hybrid_Framework_Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" class="hide-methods failed suite-Industrial_Hybrid_Framework_Suite"> (hide)</a> <!-- hide-methods failed suite-Industrial_Hybrid_Framework_Suite -->
+                      <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" class="show-methods failed suite-Industrial_Hybrid_Framework_Suite"> (show)</a> <!-- show-methods failed suite-Industrial_Hybrid_Framework_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Industrial_Hybrid_Framework_Suite">
+                    <div class="method-list-content failed suite-Industrial_Hybrid_Framework_Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.api.tests.CartApiTest" class="method navigator-link" hash-for-method="verifyAddItemToCart">verifyAddItemToCart</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.api.tests.LoginApiTest" class="method navigator-link" hash-for-method="verifyApiLogin">verifyApiLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.api.tests.CurrencyApiTest" class="method navigator-link" hash-for-method="verifyChangeCurrencyToEUR">verifyChangeCurrencyToEUR</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.api.tests.EditCartApiTest" class="method navigator-link" hash-for-method="verifyEditCartQuantity">verifyEditCartQuantity</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.api.tests.HybridLoginTest" class="method navigator-link" hash-for-method="verifyLoginWithApiCreatedUser">verifyLoginWithApiCreatedUser</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.api.tests.RegisterApiTest" class="method navigator-link" hash-for-method="verifyRegisterAccountViaPost">verifyRegisterAccountViaPost</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.tests.LoginTest" class="method navigator-link" hash-for-method="verifyUserLogin">verifyUserLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.tests.RegisterTest" class="method navigator-link" hash-for-method="verifyUserRegistration">verifyUserRegistration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Industrial_Hybrid_Framework_Suite -->
+                    </div> <!-- method-list-content failed suite-Industrial_Hybrid_Framework_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" class="hide-methods skipped suite-Industrial_Hybrid_Framework_Suite"> (hide)</a> <!-- hide-methods skipped suite-Industrial_Hybrid_Framework_Suite -->
+                      <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" class="show-methods skipped suite-Industrial_Hybrid_Framework_Suite"> (show)</a> <!-- show-methods skipped suite-Industrial_Hybrid_Framework_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Industrial_Hybrid_Framework_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.api.tests.CartApiTest" class="method navigator-link" hash-for-method="verifyAddItemToCart">verifyAddItemToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.api.tests.LoginApiTest" class="method navigator-link" hash-for-method="verifyApiLogin">verifyApiLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.api.tests.CurrencyApiTest" class="method navigator-link" hash-for-method="verifyChangeCurrencyToEUR">verifyChangeCurrencyToEUR</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.api.tests.EditCartApiTest" class="method navigator-link" hash-for-method="verifyEditCartQuantity">verifyEditCartQuantity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.api.tests.HybridLoginTest" class="method navigator-link" hash-for-method="verifyLoginWithApiCreatedUser">verifyLoginWithApiCreatedUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.api.tests.RegisterApiTest" class="method navigator-link" hash-for-method="verifyRegisterAccountViaPost">verifyRegisterAccountViaPost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Industrial_Hybrid_Framework_Suite" title="com.opencart.tests.DatabaseValidationTest" class="method navigator-link" hash-for-method="verifyUserRegistrationInDatabase">verifyUserRegistrationInDatabase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Industrial_Hybrid_Framework_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -153,114 +167,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Industrial_Hybrid_Framework_Suite" class="panel Industrial_Hybrid_Framework_Suite">
-          <div class="suite-Industrial_Hybrid_Framework_Suite-class-passed">
+          <div class="suite-Industrial_Hybrid_Framework_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.opencart.tests.RegisterTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUserRegistration">
-                  </a> <!-- verifyUserRegistration -->
-                  <span class="method-name">verifyUserRegistration</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-passed -->
-          <div class="suite-Industrial_Hybrid_Framework_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.opencart.api.tests.CurrencyApiTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyChangeCurrencyToEUR">
-                  </a> <!-- verifyChangeCurrencyToEUR -->
-                  <span class="method-name">verifyChangeCurrencyToEUR</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-passed -->
-          <div class="suite-Industrial_Hybrid_Framework_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.opencart.api.tests.HybridLoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginWithApiCreatedUser">
-                  </a> <!-- verifyLoginWithApiCreatedUser -->
-                  <span class="method-name">verifyLoginWithApiCreatedUser</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-passed -->
-          <div class="suite-Industrial_Hybrid_Framework_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.opencart.api.tests.RegisterApiTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyRegisterAccountViaPost">
-                  </a> <!-- verifyRegisterAccountViaPost -->
-                  <span class="method-name">verifyRegisterAccountViaPost</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-passed -->
-          <div class="suite-Industrial_Hybrid_Framework_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.opencart.api.tests.LoginApiTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyApiLogin">
-                  </a> <!-- verifyApiLogin -->
-                  <span class="method-name">verifyApiLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-passed -->
-          <div class="suite-Industrial_Hybrid_Framework_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.opencart.api.tests.EditCartApiTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyEditCartQuantity">
-                  </a> <!-- verifyEditCartQuantity -->
-                  <span class="method-name">verifyEditCartQuantity</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-passed -->
-          <div class="suite-Industrial_Hybrid_Framework_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.opencart.api.tests.CartApiTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAddItemToCart">
-                  </a> <!-- verifyAddItemToCart -->
-                  <span class="method-name">verifyAddItemToCart</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-passed -->
-          <div class="suite-Industrial_Hybrid_Framework_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.opencart.tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -269,10 +178,304 @@
                   <a name="verifyUserLogin">
                   </a> <!-- verifyUserLogin -->
                   <span class="method-name">verifyUserLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=143.0.7499.170)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0f08e2d121263d4ec14ac9c7f61e53f, findElement {using=xpath, value=//span[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\padma\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63657}, goog:processID: 3664, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63657/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a0f08e2d121263d4ec14ac9c7f61e53f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.opencart.pages.HomePage.navigateToRegister(HomePage.java:51)
+	at com.opencart.tests.LoginTest.verifyUserLogin(LoginTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-passed -->
+          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-failed -->
+          <div class="suite-Industrial_Hybrid_Framework_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.opencart.tests.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserRegistration">
+                  </a> <!-- verifyUserRegistration -->
+                  <span class="method-name">verifyUserRegistration</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;My Account&apos;]&quot;}
+  (Session info: chrome=143.0.7499.170)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [164a91b87704155fce53ccbaa49a43fd, findElement {using=xpath, value=//span[text()=&apos;My Account&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.169 (164b20aab62..., userDataDir: C:\Users\padma\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51077}, goog:processID: 5732, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51077/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 164a91b87704155fce53ccbaa49a43fd
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.opencart.pages.HomePage.navigateToRegister(HomePage.java:51)
+	at com.opencart.tests.RegisterTest.verifyUserRegistration(RegisterTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-failed -->
+          <div class="suite-Industrial_Hybrid_Framework_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.opencart.api.tests.EditCartApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEditCartQuantity">
+                  </a> <!-- verifyEditCartQuantity -->
+                  <span class="method-name">verifyEditCartQuantity</span>
+                  <div class="stack-trace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-skipped -->
+          <div class="suite-Industrial_Hybrid_Framework_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.opencart.api.tests.LoginApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyApiLogin">
+                  </a> <!-- verifyApiLogin -->
+                  <span class="method-name">verifyApiLogin</span>
+                  <div class="stack-trace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-skipped -->
+          <div class="suite-Industrial_Hybrid_Framework_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.opencart.tests.DatabaseValidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserRegistrationInDatabase">
+                  </a> <!-- verifyUserRegistrationInDatabase -->
+                  <span class="method-name">verifyUserRegistrationInDatabase</span>
+                  <div class="stack-trace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-skipped -->
+          <div class="suite-Industrial_Hybrid_Framework_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.opencart.api.tests.CartApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddItemToCart">
+                  </a> <!-- verifyAddItemToCart -->
+                  <span class="method-name">verifyAddItemToCart</span>
+                  <div class="stack-trace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-skipped -->
+          <div class="suite-Industrial_Hybrid_Framework_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.opencart.api.tests.HybridLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithApiCreatedUser">
+                  </a> <!-- verifyLoginWithApiCreatedUser -->
+                  <span class="method-name">verifyLoginWithApiCreatedUser</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;302&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:516)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:714)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:139)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:344)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:147)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at com.opencart.api.tests.HybridLoginTest.setupDataAndBrowser(HybridLoginTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-skipped -->
+          <div class="suite-Industrial_Hybrid_Framework_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.opencart.api.tests.RegisterApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisterAccountViaPost">
+                  </a> <!-- verifyRegisterAccountViaPost -->
+                  <span class="method-name">verifyRegisterAccountViaPost</span>
+                  <div class="stack-trace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-skipped -->
+          <div class="suite-Industrial_Hybrid_Framework_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.opencart.api.tests.CurrencyApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyChangeCurrencyToEUR">
+                  </a> <!-- verifyChangeCurrencyToEUR -->
+                  <span class="method-name">verifyChangeCurrencyToEUR</span>
+                  <div class="stack-trace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1003)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:968)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1048)
+	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
+	at io.restassured.path.json.JsonPath.getString(JsonPath.java:352)
+	at com.opencart.api.base.BaseApiTest.setup(BaseApiTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
+	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.java:104)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.java:90)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:966)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1001)
+	... 35 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Industrial_Hybrid_Framework_Suite-class-skipped -->
         </div> <!-- panel Industrial_Hybrid_Framework_Suite -->
         <div panel-name="test-xml-Industrial_Hybrid_Framework_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -292,6 +495,11 @@
       &lt;class name=&quot;com.opencart.api.tests.CurrencyApiTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Backend API Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Database Validation Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.opencart.tests.DatabaseValidationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Database Validation Tests --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Hybrid Integration Tests&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.opencart.api.tests.HybridLoginTest&quot;/&gt;
@@ -315,6 +523,9 @@
             <ul>
               <li>
                 <span class="test-name">Backend API Tests (5 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Database Validation Tests (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Hybrid Integration Tests (1 class)</span>
@@ -346,44 +557,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUserLogin')
-data.setCell(0, 2, 'com.opencart.tests.LoginTest')
-data.setCell(0, 3, 7352);
+data.setCell(0, 1, 'verifyUserRegistration')
+data.setCell(0, 2, 'com.opencart.tests.RegisterTest')
+data.setCell(0, 3, 10054);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyUserRegistration')
-data.setCell(1, 2, 'com.opencart.tests.RegisterTest')
-data.setCell(1, 3, 3679);
+data.setCell(1, 1, 'verifyUserLogin')
+data.setCell(1, 2, 'com.opencart.tests.LoginTest')
+data.setCell(1, 3, 10029);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLoginWithApiCreatedUser')
-data.setCell(2, 2, 'com.opencart.api.tests.HybridLoginTest')
-data.setCell(2, 3, 2972);
+data.setCell(2, 1, 'verifyAddItemToCart')
+data.setCell(2, 2, 'com.opencart.api.tests.CartApiTest')
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyChangeCurrencyToEUR')
-data.setCell(3, 2, 'com.opencart.api.tests.CurrencyApiTest')
-data.setCell(3, 3, 477);
+data.setCell(3, 1, 'verifyRegisterAccountViaPost')
+data.setCell(3, 2, 'com.opencart.api.tests.RegisterApiTest')
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyAddItemToCart')
-data.setCell(4, 2, 'com.opencart.api.tests.CartApiTest')
-data.setCell(4, 3, 369);
+data.setCell(4, 1, 'verifyChangeCurrencyToEUR')
+data.setCell(4, 2, 'com.opencart.api.tests.CurrencyApiTest')
+data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyEditCartQuantity')
-data.setCell(5, 2, 'com.opencart.api.tests.EditCartApiTest')
-data.setCell(5, 3, 360);
+data.setCell(5, 1, 'verifyApiLogin')
+data.setCell(5, 2, 'com.opencart.api.tests.LoginApiTest')
+data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyApiLogin')
-data.setCell(6, 2, 'com.opencart.api.tests.LoginApiTest')
-data.setCell(6, 3, 270);
+data.setCell(6, 1, 'verifyEditCartQuantity')
+data.setCell(6, 2, 'com.opencart.api.tests.EditCartApiTest')
+data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyRegisterAccountViaPost')
-data.setCell(7, 2, 'com.opencart.api.tests.RegisterApiTest')
-data.setCell(7, 3, 214);
+data.setCell(7, 1, 'verifyUserRegistrationInDatabase')
+data.setCell(7, 2, 'com.opencart.tests.DatabaseValidationTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyLoginWithApiCreatedUser')
+data.setCell(8, 2, 'com.opencart.api.tests.HybridLoginTest')
+data.setCell(8, 3, 0);
 window.suiteTableData['Industrial_Hybrid_Framework_Suite']= { tableData: data, tableDiv: 'times-div-Industrial_Hybrid_Framework_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Industrial_Hybrid_Framework_Suite">
               </div> <!-- times-div-Industrial_Hybrid_Framework_Suite -->
             </div> <!-- times-div -->
@@ -411,101 +626,98 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.opencart.api.tests.LoginApiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">verifyApiLogin</span>
-                <span class="method-start">4422 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.opencart.api.tests.CartApiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setup</span>
-                <span class="method-start">4696 ms</span>
+                <span class="method-start">6040 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">verifyAddItemToCart</span>
-                <span class="method-start">4921 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.opencart.api.tests.RegisterApiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setup</span>
-                <span class="method-start">5292 ms</span>
+                <span class="method-start">6117 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">verifyRegisterAccountViaPost</span>
-                <span class="method-start">5543 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.opencart.api.tests.EditCartApiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setup</span>
-                <span class="method-start">5759 ms</span>
+                <span class="method-start">6205 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">verifyEditCartQuantity</span>
-                <span class="method-start">5945 ms</span>
-              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.opencart.api.tests.CurrencyApiTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setup</span>
-                <span class="method-start">6307 ms</span>
+                <span class="method-start">6309 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">verifyChangeCurrencyToEUR</span>
-                <span class="method-start">6532 ms</span>
-              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.opencart.tests.DatabaseValidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup</span>
+                <span class="method-start">6455 ms</span>
+              </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.opencart.api.tests.HybridLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setupDataAndBrowser</span>
-                <span class="method-start">7073 ms</span>
+                <span class="method-start">6546 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyLoginWithApiCreatedUser</span>
-                <span class="method-start">11663 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">14636 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.opencart.tests.RegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">14997 ms</span>
+                <span class="method-start">10741 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyUserRegistration</span>
-                <span class="method-start">17657 ms</span>
+                <span class="method-start">12869 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21337 ms</span>
+                <span class="method-start">22932 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.opencart.tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">21672 ms</span>
+                <span class="method-start">23252 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyUserLogin</span>
-                <span class="method-start">24025 ms</span>
+                <span class="method-start">25681 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31378 ms</span>
+                <span class="method-start">35713 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
