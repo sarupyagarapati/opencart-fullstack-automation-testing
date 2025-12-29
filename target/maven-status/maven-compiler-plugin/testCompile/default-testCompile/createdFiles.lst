@@ -1,0 +1,12 @@
+com\opencart\api\tests\CartApiTest.class
+com\opencart\tests\ProductCompareTest.class
+com\opencart\tests\WishlistTest.class
+com\opencart\api\tests\LoginApiTest.class
+com\opencart\api\tests\HybridLoginTest.class
+com\opencart\tests\GuestCheckoutTest.class
+com\opencart\api\tests\RegisterApiTest.class
+com\opencart\tests\LoginTest.class
+com\opencart\tests\OrderHistoryTest.class
+com\opencart\tests\RegisterTest.class
+com\opencart\tests\ChangePasswordTest.class
+com\opencart\api\base\BaseApiTest.class

@@ -13,6 +13,7 @@ import java.util.Map;
 
 public class HybridLoginTest extends BasePage {
 
+    // DECLARE ONLY - DO NOT use 'new' here
     HomePage homePage;
     LoginPage loginPage;
     String autoEmail;
@@ -22,12 +23,15 @@ public class HybridLoginTest extends BasePage {
 
     @BeforeMethod
     public void setupDataAndBrowser() {
-        // --- STEP 1: API PHASE (Create Data) ---
+        // 1. Open Browser FIRST
+        initialization(); 
+        
+        // 2. NOW initialize Page Objects (They will pick up the open driver)
+        homePage = new HomePage();
+        loginPage = new LoginPage();
+
+        // 3. API Data Creation
         System.out.println(">> HYBRID TEST: Seeding data via API...");
-        
-        
-        
-        // 2. Prepare Unique Data
         autoEmail = "hybrid_" + System.currentTimeMillis() + "@test.com";
         autoPassword = "Password@123";
 
@@ -40,39 +44,27 @@ public class HybridLoginTest extends BasePage {
         formData.put("confirm", autoPassword);
         formData.put("agree", "1");
 
-        // 3. Hit the API to Register
         RestAssured.baseURI = prop.getProperty("url") + "index.php";
         RestAssured.given()
                 .queryParam("route", "account/register")
                 .formParams(formData)
                 .post()
                 .then()
-                .statusCode(302); // Expect Redirect (Success)
-
-        System.out.println(">> DATA CREATED: " + autoEmail);
-        
-        // --- STEP 2: UI SETUP ---
-        // (Browser is already open from initialization())
-        homePage = new HomePage();
-        loginPage = new LoginPage();
+                .statusCode(302);
     }
 
     @Test
     public void verifyLoginWithApiCreatedUser() {
         System.out.println(">> HYBRID TEST: Logging in via Selenium...");
-        
-        // 1. Go to Login Page
         homePage.navigateToLogin();
-        
-        // 2. Login with the API-Created Credentials
         loginPage.doLogin(autoEmail, autoPassword);
-        
-        // 3. Verify Login Success
         Assert.assertTrue(driver.getTitle().equals("My Account"), "Hybrid Login Failed!");
     }
 
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+        if(driver != null) {
+            driver.quit();
+        }
     }
 }

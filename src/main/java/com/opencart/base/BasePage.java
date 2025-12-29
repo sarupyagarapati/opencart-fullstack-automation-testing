@@ -25,26 +25,30 @@ public class BasePage {
 
     public static void initialization() {
         String browserName = prop.getProperty("browser");
+
         if (browserName.equals("chrome")) {
             ChromeOptions options = new ChromeOptions();
             
-            // 1. DATA BREACH & PASSWORD FIXES
+            // 1. Security & Password Manager Popups Fix
             Map<String, Object> prefs = new HashMap<String, Object>();
             prefs.put("credentials_enable_service", false);
             prefs.put("profile.password_manager_enabled", false);
             options.setExperimentalOption("prefs", prefs);
             options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
             
-            // 2. THE CRASH FIX: Start maximized via arguments, NOT via driver.manage()
+            // 2. Stability Fixes (Maximized, CORS, Notifications)
             options.addArguments("--start-maximized");
             options.addArguments("--remote-allow-origins=*");
             options.addArguments("--disable-notifications");
             
+            // Optional: Uncomment for "Headless" mode (Invisible Browser)
+            // options.addArguments("--headless=new");
+            
+            // 3. Initialize the Driver (ONLY ONCE)
             driver = new ChromeDriver(options);
         }
         
-        // REMOVED: driver.manage().window().maximize(); <--- THIS WAS CAUSING THE CRASH
-        
+        // 4. Global Driver Settings
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));

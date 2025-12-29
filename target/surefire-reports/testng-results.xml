@@ -1,41 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-29T15:04:51 IST" name="OpenCart Automation Suite" finished-at="2025-12-29T15:04:58 IST" duration-ms="7095">
+  <suite started-at="2025-12-29T16:22:33 IST" name="Industrial Hybrid Framework Suite" finished-at="2025-12-29T16:23:04 IST" duration-ms="31763">
     <groups>
     </groups>
-    <test started-at="2025-12-29T15:04:51 IST" name="Regression Tests" finished-at="2025-12-29T15:04:58 IST" duration-ms="7095">
-      <class name="com.opencart.api.tests.LoginApiTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.api.tests.LoginApiTest@3ce1e309]" started-at="2025-12-29T15:04:51 IST" name="setup" finished-at="2025-12-29T15:04:57 IST" duration-ms="5720" status="PASS">
+    <test started-at="2025-12-29T16:22:33 IST" name="Backend API Tests" finished-at="2025-12-29T16:22:40 IST" duration-ms="7057">
+      <class name="com.opencart.api.tests.CurrencyApiTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.api.tests.CurrencyApiTest@5ffead27]" started-at="2025-12-29T16:22:39 IST" name="setup" finished-at="2025-12-29T16:22:39 IST" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyApiLogin()[pri:0, instance:com.opencart.api.tests.LoginApiTest@3ce1e309]" started-at="2025-12-29T15:04:57 IST" name="verifyApiLogin" finished-at="2025-12-29T15:04:57 IST" duration-ms="218" status="PASS">
+        <test-method signature="verifyChangeCurrencyToEUR()[pri:0, instance:com.opencart.api.tests.CurrencyApiTest@5ffead27]" started-at="2025-12-29T16:22:39 IST" name="verifyChangeCurrencyToEUR" finished-at="2025-12-29T16:22:40 IST" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyChangeCurrencyToEUR -->
+      </class> <!-- com.opencart.api.tests.CurrencyApiTest -->
+      <class name="com.opencart.api.tests.EditCartApiTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.api.tests.EditCartApiTest@4567f35d]" started-at="2025-12-29T16:22:39 IST" name="setup" finished-at="2025-12-29T16:22:39 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyEditCartQuantity()[pri:0, instance:com.opencart.api.tests.EditCartApiTest@4567f35d]" started-at="2025-12-29T16:22:39 IST" name="verifyEditCartQuantity" finished-at="2025-12-29T16:22:39 IST" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditCartQuantity -->
+      </class> <!-- com.opencart.api.tests.EditCartApiTest -->
+      <class name="com.opencart.api.tests.LoginApiTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.api.tests.LoginApiTest@7c729a55]" started-at="2025-12-29T16:22:33 IST" name="setup" finished-at="2025-12-29T16:22:37 IST" duration-ms="4389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyApiLogin()[pri:0, instance:com.opencart.api.tests.LoginApiTest@7c729a55]" started-at="2025-12-29T16:22:37 IST" name="verifyApiLogin" finished-at="2025-12-29T16:22:37 IST" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyApiLogin -->
       </class> <!-- com.opencart.api.tests.LoginApiTest -->
       <class name="com.opencart.api.tests.CartApiTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.api.tests.CartApiTest@3bb9a3ff]" started-at="2025-12-29T15:04:57 IST" name="setup" finished-at="2025-12-29T15:04:57 IST" duration-ms="146" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.api.tests.CartApiTest@694abbdc]" started-at="2025-12-29T16:22:37 IST" name="setup" finished-at="2025-12-29T16:22:38 IST" duration-ms="224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAddItemToCart()[pri:0, instance:com.opencart.api.tests.CartApiTest@3bb9a3ff]" started-at="2025-12-29T15:04:57 IST" name="verifyAddItemToCart" finished-at="2025-12-29T15:04:58 IST" duration-ms="419" status="PASS">
+        <test-method signature="verifyAddItemToCart()[pri:0, instance:com.opencart.api.tests.CartApiTest@694abbdc]" started-at="2025-12-29T16:22:38 IST" name="verifyAddItemToCart" finished-at="2025-12-29T16:22:38 IST" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddItemToCart -->
       </class> <!-- com.opencart.api.tests.CartApiTest -->
       <class name="com.opencart.api.tests.RegisterApiTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.api.tests.RegisterApiTest@661972b0]" started-at="2025-12-29T15:04:58 IST" name="setup" finished-at="2025-12-29T15:04:58 IST" duration-ms="172" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.api.tests.RegisterApiTest@2e005c4b]" started-at="2025-12-29T16:22:38 IST" name="setup" finished-at="2025-12-29T16:22:38 IST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyRegisterAccountViaPost()[pri:0, instance:com.opencart.api.tests.RegisterApiTest@661972b0]" started-at="2025-12-29T15:04:58 IST" name="verifyRegisterAccountViaPost" finished-at="2025-12-29T15:04:58 IST" duration-ms="340" status="PASS">
+        <test-method signature="verifyRegisterAccountViaPost()[pri:0, instance:com.opencart.api.tests.RegisterApiTest@2e005c4b]" started-at="2025-12-29T16:22:38 IST" name="verifyRegisterAccountViaPost" finished-at="2025-12-29T16:22:39 IST" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyRegisterAccountViaPost -->
       </class> <!-- com.opencart.api.tests.RegisterApiTest -->
-    </test> <!-- Regression Tests -->
-  </suite> <!-- OpenCart Automation Suite -->
+    </test> <!-- Backend API Tests -->
+    <test started-at="2025-12-29T16:22:40 IST" name="Hybrid Integration Tests" finished-at="2025-12-29T16:22:48 IST" duration-ms="7923">
+      <class name="com.opencart.api.tests.HybridLoginTest">
+        <test-method is-config="true" signature="setupDataAndBrowser()[pri:0, instance:com.opencart.api.tests.HybridLoginTest@6cf0e0ba]" started-at="2025-12-29T16:22:40 IST" name="setupDataAndBrowser" finished-at="2025-12-29T16:22:44 IST" duration-ms="4588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDataAndBrowser -->
+        <test-method signature="verifyLoginWithApiCreatedUser()[pri:0, instance:com.opencart.api.tests.HybridLoginTest@6cf0e0ba]" started-at="2025-12-29T16:22:44 IST" name="verifyLoginWithApiCreatedUser" finished-at="2025-12-29T16:22:47 IST" duration-ms="2972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithApiCreatedUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.api.tests.HybridLoginTest@6cf0e0ba]" started-at="2025-12-29T16:22:47 IST" name="tearDown" finished-at="2025-12-29T16:22:48 IST" duration-ms="356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.api.tests.HybridLoginTest -->
+    </test> <!-- Hybrid Integration Tests -->
+    <test started-at="2025-12-29T16:22:48 IST" name="Frontend UI Tests" finished-at="2025-12-29T16:23:04 IST" duration-ms="16719">
+      <class name="com.opencart.tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.tests.LoginTest@313ac989]" started-at="2025-12-29T16:22:54 IST" name="setup" finished-at="2025-12-29T16:22:57 IST" duration-ms="2353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserLogin()[pri:0, instance:com.opencart.tests.LoginTest@313ac989]" started-at="2025-12-29T16:22:57 IST" name="verifyUserLogin" finished-at="2025-12-29T16:23:04 IST" duration-ms="7352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.LoginTest@313ac989]" started-at="2025-12-29T16:23:04 IST" name="tearDown" finished-at="2025-12-29T16:23:04 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.tests.LoginTest -->
+      <class name="com.opencart.tests.RegisterTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.opencart.tests.RegisterTest@3023df74]" started-at="2025-12-29T16:22:48 IST" name="setup" finished-at="2025-12-29T16:22:50 IST" duration-ms="2660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserRegistration()[pri:0, instance:com.opencart.tests.RegisterTest@3023df74]" started-at="2025-12-29T16:22:50 IST" name="verifyUserRegistration" finished-at="2025-12-29T16:22:54 IST" duration-ms="3679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.opencart.tests.RegisterTest@3023df74]" started-at="2025-12-29T16:22:54 IST" name="tearDown" finished-at="2025-12-29T16:22:54 IST" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.opencart.tests.RegisterTest -->
+    </test> <!-- Frontend UI Tests -->
+  </suite> <!-- Industrial Hybrid Framework Suite -->
 </testng-results>
