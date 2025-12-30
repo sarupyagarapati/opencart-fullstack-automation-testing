@@ -1,0 +1,145 @@
+<html>
+<head>
+<title>TestNG:  All Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>All Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 30 15:13:04 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>101 seconds (101934 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.opencart.tests.DatabaseValidationTest.verifyUserRegistrationInDatabase()'><b>verifyUserRegistrationInDatabase</b><br>Test class: com.opencart.tests.DatabaseValidationTest</td>
+<td></td>
+<td>2</td>
+<td>com.opencart.tests.DatabaseValidationTest@4e5ed836</td></tr>
+<tr>
+<td title='com.opencart.tests.ChangePasswordTest.verifyPasswordChangeFlow()'><b>verifyPasswordChangeFlow</b><br>Test class: com.opencart.tests.ChangePasswordTest</td>
+<td></td>
+<td>13</td>
+<td>com.opencart.tests.ChangePasswordTest@7bd7d6d6</td></tr>
+<tr>
+<td title='com.opencart.api.tests.RegisterApiTest.verifyRegisterAccountViaPost()'><b>verifyRegisterAccountViaPost</b><br>Test class: com.opencart.api.tests.RegisterApiTest</td>
+<td></td>
+<td>2</td>
+<td>com.opencart.api.tests.RegisterApiTest@710636b0</td></tr>
+<tr>
+<td title='com.opencart.api.tests.EditCartApiTest.verifyEditCartQuantity()'><b>verifyEditCartQuantity</b><br>Test class: com.opencart.api.tests.EditCartApiTest</td>
+<td></td>
+<td>0</td>
+<td>com.opencart.api.tests.EditCartApiTest@3de8f619</td></tr>
+<tr>
+<td title='com.opencart.tests.LoginTest.verifyUserLogin()'><b>verifyUserLogin</b><br>Test class: com.opencart.tests.LoginTest</td>
+<td></td>
+<td>8</td>
+<td>com.opencart.tests.LoginTest@740fb309</td></tr>
+<tr>
+<td title='com.opencart.tests.WishlistTest.verifyAddProductToWishlist()'><b>verifyAddProductToWishlist</b><br>Test class: com.opencart.tests.WishlistTest</td>
+<td></td>
+<td>12</td>
+<td>com.opencart.tests.WishlistTest@6f204a1a</td></tr>
+<tr>
+<td title='com.opencart.api.tests.LoginApiTest.verifyApiLogin()'><b>verifyApiLogin</b><br>Test class: com.opencart.api.tests.LoginApiTest</td>
+<td></td>
+<td>0</td>
+<td>com.opencart.api.tests.LoginApiTest@1a245833</td></tr>
+<tr>
+<td title='com.opencart.tests.OrderHistoryTest.verifyOrderHistoryPageAccess()'><b>verifyOrderHistoryPageAccess</b><br>Test class: com.opencart.tests.OrderHistoryTest</td>
+<td></td>
+<td>9</td>
+<td>com.opencart.tests.OrderHistoryTest@239a307b</td></tr>
+<tr>
+<td title='com.opencart.tests.RegisterTest.verifyUserRegistration()'><b>verifyUserRegistration</b><br>Test class: com.opencart.tests.RegisterTest</td>
+<td></td>
+<td>6</td>
+<td>com.opencart.tests.RegisterTest@eadd4fb</td></tr>
+<tr>
+<td title='com.opencart.tests.ProductCompareTest.verifyTwoProductsComparison()'><b>verifyTwoProductsComparison</b><br>Test class: com.opencart.tests.ProductCompareTest</td>
+<td></td>
+<td>6</td>
+<td>com.opencart.tests.ProductCompareTest@2a8448fa</td></tr>
+<tr>
+<td title='com.opencart.api.tests.CurrencyApiTest.verifyChangeCurrencyToEUR()'><b>verifyChangeCurrencyToEUR</b><br>Test class: com.opencart.api.tests.CurrencyApiTest</td>
+<td></td>
+<td>0</td>
+<td>com.opencart.api.tests.CurrencyApiTest@2ab4bc72</td></tr>
+<tr>
+<td title='com.opencart.api.tests.CartApiTest.verifyAddItemToCart()'><b>verifyAddItemToCart</b><br>Test class: com.opencart.api.tests.CartApiTest</td>
+<td></td>
+<td>0</td>
+<td>com.opencart.api.tests.CartApiTest@6cb107fd</td></tr>
+<tr>
+<td title='com.opencart.tests.GuestCheckoutTest.verifyGuestCheckoutFlow()'><b>verifyGuestCheckoutFlow</b><br>Test class: com.opencart.tests.GuestCheckoutTest</td>
+<td></td>
+<td>14</td>
+<td>com.opencart.tests.GuestCheckoutTest@43f02ef2</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Industrial Hybrid Framework Suite">
+
+    <listeners>
+        <listener class-name="com.opencart.utilities.TestListener"/>
+    </listeners>
+
+    <test name="All Tests">
+        <classes>
+            <class name="com.opencart.api.tests.LoginApiTest"/>
+            <class name="com.opencart.api.tests.CartApiTest"/>
+            <class name="com.opencart.api.tests.RegisterApiTest"/>
+            <class name="com.opencart.api.tests.EditCartApiTest"/>
+            <class name="com.opencart.api.tests.CurrencyApiTest"/>
+
+            <class name="com.opencart.tests.DatabaseValidationTest"/>
+
+            <class name="com.opencart.tests.RegisterTest"/>
+            <class name="com.opencart.tests.LoginTest"/>
+            <class name="com.opencart.tests.ChangePasswordTest"/>
+            <class name="com.opencart.tests.GuestCheckoutTest"/>
+            <class name="com.opencart.tests.OrderHistoryTest"/>
+            <class name="com.opencart.tests.ProductCompareTest"/>
+            <class name="com.opencart.tests.WishlistTest"/>
+        </classes>
+    </test>
+
+</suite>
