@@ -17,8 +17,6 @@ public class BasePage {
     
     public static WebDriver driver;
     public static Properties prop;
-    
-    // 1. Define the Logger (Static because your init method is static)
     public static Logger logger = LogManager.getLogger(BasePage.class);
 
     public BasePage() {
@@ -33,39 +31,36 @@ public class BasePage {
 
     public static void initialization() {
         String browserName = prop.getProperty("browser");
-        
-        // 2. Log the start of the test
         logger.info(">> Initializing Browser: " + browserName);
 
         if (browserName.equals("chrome")) {
             ChromeOptions options = new ChromeOptions();
             
-            // Security & Password Manager Popups Fix
+            // 1. Basic Preferences
             Map<String, Object> prefs = new HashMap<String, Object>();
             prefs.put("credentials_enable_service", false);
             prefs.put("profile.password_manager_enabled", false);
             options.setExperimentalOption("prefs", prefs);
             options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
             
-            // Stability Fixes
+            // 2. Performance Options
             options.addArguments("--start-maximized");
             options.addArguments("--remote-allow-origins=*");
             options.addArguments("--disable-notifications");
             
-            // Initialize the Driver
+            // 3. HEADLESS MODE (The most important line!)
+            options.addArguments("--headless=new"); 
+            
             driver = new ChromeDriver(options);
-            logger.info(">> Chrome Driver launched successfully.");
+            
+            // This Log Message proves the new code is running
+            logger.info(">> Chrome Driver launched in HEADLESS mode.");
         }
         
-        // Global Driver Settings
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-        
-        // Navigate
-        String url = prop.getProperty("url");
-        driver.get(url);
-        logger.info(">> Navigated to Application URL: " + url);
+        driver.get(prop.getProperty("url"));
+        logger.info(">> Navigated to Application URL: " + prop.getProperty("url"));
     }
 }
-//Updated for Jenkins Headless Mode
