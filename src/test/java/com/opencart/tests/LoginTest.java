@@ -24,7 +24,7 @@ public class LoginTest extends BasePage {
 
     @BeforeMethod
     public void setup() {
-        initialization();
+        initialization(); // Logs "Initializing Browser" automatically from BasePage
         homePage = new HomePage();
         loginPage = new LoginPage();
         registerPage = new RegisterPage();
@@ -33,32 +33,50 @@ public class LoginTest extends BasePage {
 
     @Test
     public void verifyUserLogin() {
+        // Log the start of the specific test case
+        logger.info(">> STARTING TEST: verifyUserLogin");
+
         // 1. Self-Healing: Create a fresh user
         String tempEmail = "login_" + System.currentTimeMillis() + "@test.com";
         String tempPass = "K$lM#99!xQz_2025";
         
+        logger.info(">> Generated fresh credentials: " + tempEmail);
+
         homePage.navigateToRegister();
+        logger.info(">> Navigated to Register Page");
+
         registerPage.registerUser("Login", "Tester", tempEmail, "9876543210", tempPass);
+        logger.info(">> User Registered successfully for Self-Healing");
         
         // 2. Perform Logout
         homePage.logout();
         
-        // --- THE FIX --- 
-        // We explicitly wait until the "Account Logout" header appears.
-        // This ensures the user is 100% logged out before we try to log back in.
+        // Wait for logout to complete
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1[text()='Account Logout']")));
+        logger.info(">> User Logged Out (Pre-condition met)");
         
         // 3. Now Perform the Real Login Test
-        homePage.navigateToLogin(); // This will now correctly find the "Login" link
+        homePage.navigateToLogin(); 
+        logger.info(">> Navigated to Login Page");
+
         loginPage.doLogin(tempEmail, tempPass);
+        logger.info(">> Performed Login Action");
         
         // 4. Verify
-        Assert.assertTrue(driver.getTitle().equals("My Account"), 
-            "Login Failed! Actual Title: " + driver.getTitle());
+        String actualTitle = driver.getTitle();
+        logger.info(">> Verifying Page Title. Found: " + actualTitle);
+
+        Assert.assertTrue(actualTitle.equals("My Account"), 
+            "Login Failed! Actual Title: " + actualTitle);
+        
+        logger.info(">> TEST PASSED: verifyUserLogin");
     }
 
     @AfterMethod
     public void tearDown() {
-        driver.quit();
+        if (driver != null) {
+            driver.quit();
+            logger.info(">> Browser Closed");
+        }
     }
 }
