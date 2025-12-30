@@ -68,3 +68,4 @@ public class BasePage {
         logger.info(">> Navigated to Application URL: " + url);
     }
 }
+//Updated for Jenkins Headless Mode
