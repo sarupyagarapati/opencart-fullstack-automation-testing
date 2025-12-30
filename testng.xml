@@ -24,5 +24,10 @@
             <class name="com.opencart.tests.WishlistTest"/>
         </classes>
     </test>
+    <test name="Hybrid Integration Tests">
+        <classes>
+            <class name="com.opencart.api.tests.HybridLoginTest"/>
+        </classes>
+    </test>
 
 </suite>
