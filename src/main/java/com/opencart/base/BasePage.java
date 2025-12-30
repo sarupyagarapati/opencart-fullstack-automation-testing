@@ -1,35 +1,4 @@
-package com.opencart.base;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.time.Duration;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-
-public class BasePage {
-    
-    public static WebDriver driver;
-    public static Properties prop;
-    public static Logger logger = LogManager.getLogger(BasePage.class);
-
-    public BasePage() {
-        try {
-            prop = new Properties();
-            FileInputStream ip = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/config.properties");
-            prop.load(ip);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public static void initialization() {
+public static void initialization() {
         String browserName = prop.getProperty("browser");
         logger.info(">> Initializing Browser: " + browserName);
 
@@ -44,17 +13,18 @@ public class BasePage {
             options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
             
             // 2. Performance Options
-            options.addArguments("--start-maximized");
             options.addArguments("--remote-allow-origins=*");
             options.addArguments("--disable-notifications");
             
-            // 3. HEADLESS MODE (The most important line!)
+            // 3. HEADLESS MODE CONFIGURATION
             options.addArguments("--headless=new"); 
             
-            driver = new ChromeDriver(options);
+            // *** CRITICAL FIX: Force Desktop Resolution ***
+            options.addArguments("--window-size=1920,1080");
+            options.addArguments("--start-maximized"); // Optional backup
             
-            // This Log Message proves the new code is running
-            logger.info(">> Chrome Driver launched in HEADLESS mode.");
+            driver = new ChromeDriver(options);
+            logger.info(">> Chrome Driver launched in HEADLESS mode (1920x1080).");
         }
         
         driver.manage().deleteAllCookies();
@@ -63,4 +33,3 @@ public class BasePage {
         driver.get(prop.getProperty("url"));
         logger.info(">> Navigated to Application URL: " + prop.getProperty("url"));
     }
-}
